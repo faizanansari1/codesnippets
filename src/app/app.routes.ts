@@ -7,11 +7,14 @@ import { CreateBinComponent } from './components/create-bin/create-bin.component
 import { authGuard } from './auth.guard';
 import { HomeComponent } from './components/home/home.component';
 import { ViewSnippetComponent } from './components/view-snippet/view-snippet.component';
+import { DefferDemoComponent } from './components/deffer-demo/deffer-demo.component';
 
 export const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'create', component: CreateBinComponent, canActivate: [authGuard] },
+  // This is only learning perpose { path: 'deffer', component: DefferDemoComponent },
+
   {
     path: 'about',
     loadComponent: () =>

@@ -6,6 +6,10 @@
         <a routerLink="/create" routerLinkActive="active">Create</a>
       </li>
       <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+      <!-- <li>
+        This is only learning perpose
+        <a routerLink="/deffer" routerLinkActive="active">Deffer View Demo</a>
+      </li> -->
 
       @if(authService.isAuthenticated()){
       <li (click)="onLogOut()" class="logout-btn">
