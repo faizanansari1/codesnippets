@@ -55,11 +55,12 @@ Push to the Branch (git push origin feature/AmazingFeature)
 Open a Pull Request
 
 
-1. **Replace** `https://github.com/your-username/codebin` with the actual URL of your GitHub repository.
-2. **Replace** `your-username` with your GitHub username.
-3. **Replace** `Your Name`, `@your-twitter-handle`, and `your-email@example.com` with your actual name, Twitter handle, and email address.
+**Repository** https://github.com/faizanansari1/codesnippets.
+**GitHub Name** faizanansari1.
 
-
+Contact
+Faizan Ansari - https://www.linkedin.com/in/faizanansari1/
+Email: faizanshaikhansari@gmail.com
 
 
    
