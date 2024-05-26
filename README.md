@@ -56,11 +56,13 @@ Open a Pull Request
 
 
 1. **Repository** https://github.com/faizanansari1/codesnippets.
-2. **GitHub Name** faizanansari1.
+2. **GitHub Name** `faizanansari1`.
 
 Contact
+
 Faizan Ansari - https://www.linkedin.com/in/faizanansari1/
-Email: faizanshaikhansari@gmail.com
+
+Email: `faizanshaikhansari@gmail.com`
 
 
    
