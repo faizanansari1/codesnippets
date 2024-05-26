@@ -1,0 +1,15 @@
+<form class="form-container" [formGroup]="loginForm">
+  <h4>Please Login</h4>
+  <input type="email" placeholder="Email here" [formControl]="email" />
+  <h5 class="red-text" [hidden]="email.valid || email.untouched">
+    Please enter valid email
+  </h5>
+  <input type="password" placeholder="Password here" [formControl]="password" />
+  <h5 class="red-text" [hidden]="password.valid || password.untouched">
+    Please is required and must be greater then 6
+  </h5>
+  <button class="btn-green" [disabled]="loginForm.invalid" (click)="login()">
+    Login
+  </button>
+  <button class="btn-red" (click)="reset()">Reset</button>
+</form>

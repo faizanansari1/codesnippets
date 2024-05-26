@@ -1,0 +1,79 @@
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin: 2em auto;
+}
+
+.form-container h4 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-container input[type="text"],
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-container input[type="text"]:focus,
+.form-container textarea:focus {
+  border-color: #66afe9;
+  outline: none;
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+
+.form-container .red-text {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.form-container .btn-green {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+}
+
+.form-container .btn-green[disabled] {
+  background-color: #94d3a2;
+  cursor: not-allowed;
+}
+
+.code-text{
+  background-color: #2d303e;
+  color: #cccccc;
+}
+
+.spinner {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.3); /* Light white for background */
+  border-left-color: #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-left: 6px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

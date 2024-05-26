@@ -1,0 +1,13 @@
+<div class="snippets-container">
+  <ul>
+    @if(isLoading){
+    <app-page-spinner />
+    } @if (items.length === 0) {
+    <h4>No Snippets available!</h4>
+    } @for (item of items; track item.id) {
+    <li>
+      <a [routerLink]="['/snippet', item.id]">{{ item.title }}</a>
+    </li>
+    }
+  </ul>
+</div>

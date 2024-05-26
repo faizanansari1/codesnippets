@@ -1,0 +1,22 @@
+<div>
+  <nav>
+    <h2><a routerLink="/">CodeBin</a></h2>
+    <ul>
+      <li [ngClass]="{ disabled: !authService.isAuthenticated() }">
+        <a routerLink="/create" routerLinkActive="active">Create</a>
+      </li>
+      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+
+      @if(authService.isAuthenticated()){
+      <li (click)="onLogOut()" class="logout-btn">
+        Logout @if(isLoading){
+        <span class="spinner"></span>
+        }
+      </li>
+      }@else {
+      <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+      <li><a routerLink="/signup" routerLinkActive="active">Signup</a></li>
+      }
+    </ul>
+  </nav>
+</div>

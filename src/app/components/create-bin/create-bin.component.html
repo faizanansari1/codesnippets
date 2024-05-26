@@ -1,0 +1,21 @@
+<form class="form-container" [formGroup]="binForm">
+  <h4>Create Code snippets</h4>
+  <input type="text" placeholder="Title" [formControl]="title" />
+  <h5 class="red-text" [hidden]="title.valid || title.untouched">
+    title is required
+  </h5>
+  <textarea
+    class="code-text"
+    placeholder="Code snippets here"
+    [formControl]="code"
+    rows="6"
+  ></textarea>
+  <h5 class="red-text" [hidden]="code.valid || code.untouched">
+    code is required
+  </h5>
+  <button class="btn-green" [disabled]="binForm.invalid" (click)="create()">
+    Create @if(isLoading){
+    <span class="spinner"></span>
+    }
+  </button>
+</form>
